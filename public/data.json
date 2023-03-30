@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "author_name": "Jeffrey Hunter",
+    "author_image": "https://images.pexels.com/photos/749091/pexels-photo-749091.jpeg?  auto=compress&cs=tinysrgb&w=300&h=750&dpr=1",
+    "blog_title": "That was fast! Microsoft slips ads into AI-powered Bing Chat",
+    "cover_image": "https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1087962190.jpg?w=500&crop=1",
+    "read_time": 5,
+    "publish_date": "15th March 2023"
+  },
+  {
+    "id": 2,
+    "author_name": "Patricia Jane",
+    "author_image": "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=300&h=750&dpr=1",
+    "blog_title": "UK to avoid fixed rules for AI – in favor of ‘context-specific guidance’",
+    "cover_image": "https://techcrunch.com/wp-content/uploads/2022/07/GettyImages-816675200.jpg?w=500&crop=1",
+    "read_time": 4,
+    "publish_date": "13th March 2023"
+  },
+  {
+    "id": 3,
+    "author_name": "Naomi Dew",
+    "author_image": "https://images.pexels.com/photos/5649997/pexels-photo-5649997.jpeg?auto=compress&cs=tinysrgb&w=300&h=750&dpr=1",
+    "blog_title": "Microsoft lets generative AI loose on cybersecurity",
+    "cover_image": "https://techcrunch.com/wp-content/uploads/2022/05/GettyImages-1354846583.jpeg?w=500&crop=1",
+    "read_time": 6,
+    "publish_date": "20th March 2023"
+  },
+  {
+    "id": 4,
+    "author_name": "Don Brophy",
+    "author_image": "https://images.pexels.com/photos/804009/pexels-photo-804009.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1",
+    "blog_title": "Apple acquired a startup using AI to compress videos",
+    "cover_image": "https://techcrunch.com/wp-content/uploads/2023/01/GettyImages-1227849474.jpg?w=500&crop=1",
+    "read_time": 5,
+    "publish_date": "22th March 2023"
+  }
+]
