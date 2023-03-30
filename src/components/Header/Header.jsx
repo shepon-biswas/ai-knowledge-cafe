@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-slate-100">
-        <div className="w-8/12 mx-auto flex justify-between content-center py-4">
+        <div className="w-8/12 mx-auto flex justify-between items-center py-4">
           <div className="logo">
             <h1 className="text-2xl font-bold">AI Knowledge Cafe</h1>
           </div>
