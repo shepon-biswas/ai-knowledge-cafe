@@ -9,12 +9,12 @@ const Sidebar = (props) => {
         <>
             <div>
                 {/* Spent time on read */}
-                <div className='bg-white my-5 rounded-lg'>
-                    <h3 className='font-bold text-center py-3'>Spent time on read: {readTime} min</h3>
+                <div className='bg-orange-100 rounded-lg border border-orange-500'>
+                    <h3 className='font-bold text-center text-orange-500 py-3'>Spent time on read: {readTime} min</h3>
                 </div>
                 {/* Bookmark Count & List */}
-                <div className=' my-5 rounded-lg'>
-                    <h2 className='font-bold text-xl text-center text-orange-500'>Bookmarked Blogs: {bookmark}</h2>
+                <div className=' my-5 rounded-lg bg-slate-200 p-4'>
+                    <h2 className='font-bold text-xl text-center '>Bookmarked Blogs: {bookmark}</h2>
                     <div>
                         <ul className='list-none'> 
                             {

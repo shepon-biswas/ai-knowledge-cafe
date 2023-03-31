@@ -1,5 +1,5 @@
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
-import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheckDouble } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react";
 
@@ -14,15 +14,15 @@ const BlogCard = (props) => {
 
   return (
     <>
-    <div className='w-8/12'>
-      <div className='w-full'>
+    <div className='border border-slate-200 mb-5 rounded-lg '>
+      <div className='w-full p-2'>
         <img
         className='rounded-lg w-full'
           src={cover_image}
           alt="cover-images"
         />
         <div>
-          <div className='flex justify-between items-center px-1 my-3'>
+          <div className='flex justify-between items-center px-2 my-3'>
             <div className='flex justify-between'>
               <img
                 className="w-12 h-12 rounded-full"
@@ -37,6 +37,7 @@ const BlogCard = (props) => {
             <div className='flex justify-between gap-2'>
                 <h4>{read_time} Min to read</h4>
                 <button 
+                  className='text-orange-500'
                   onClick={()=>handleBookmark(props.blog)}
                 ><FontAwesomeIcon icon={faBookmark} /></button>
             </div>
@@ -50,7 +51,7 @@ const BlogCard = (props) => {
             onClick={()=>handleReadTime(props.blog)}
             
             className=' underline underline-offset-4 text-orange-500 font-bold mb-4'>
-            <FontAwesomeIcon className='me-1' icon={faEnvelopeCircleCheck} />Mark As Read 
+            <FontAwesomeIcon icon={faCheckDouble} /> Mark As Read 
             </button>
         </div>
       </div>
