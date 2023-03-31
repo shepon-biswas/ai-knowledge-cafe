@@ -7,7 +7,8 @@ import React from "react";
 const BlogCard = (props) => {
     // console.log(props)
     const {author_name, author_image, blog_title, cover_image, publish_date, read_time} = props.blog;
-    // console.log(author_name)
+    const handleBookmark = props.handleBookmark;
+    // console.log(handleBookmark);
 
 
   return (
@@ -34,7 +35,9 @@ const BlogCard = (props) => {
             </div>
             <div className='flex justify-between gap-2'>
                 <h4>{read_time} Min to read</h4>
-                <button><FontAwesomeIcon icon={faBookmark} /></button>
+                <button 
+                  onClick={()=>handleBookmark(props.blog)}
+                ><FontAwesomeIcon icon={faBookmark} /></button>
             </div>
           </div>
         </div>
@@ -42,11 +45,11 @@ const BlogCard = (props) => {
             <h1 className='font-bold text-3xl'>{blog_title}</h1>
             <p className='text-gray-500 my-4 cursor-pointer'>#programming #AIupdates</p>
 
-            <button className=' underline underline-offset-4 text-orange-500 font-bold mb-4'>
-            <FontAwesomeIcon className='me-1' icon={faEnvelopeCircleCheck} />
-                
-                Mark As Read 
+            <button 
+            onClick={()=>handleReadTime(props.blog)}
             
+            className=' underline underline-offset-4 text-orange-500 font-bold mb-4'>
+            <FontAwesomeIcon className='me-1' icon={faEnvelopeCircleCheck} />Mark As Read 
             </button>
         </div>
       </div>
