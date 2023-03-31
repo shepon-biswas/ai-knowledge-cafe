@@ -8,7 +8,8 @@ const BlogCard = (props) => {
     // console.log(props)
     const {author_name, author_image, blog_title, cover_image, publish_date, read_time} = props.blog;
     const handleBookmark = props.handleBookmark;
-    // console.log(handleBookmark);
+    const handleReadTime = props.handleReadTime;
+    // console.log(handleReadTime);
 
 
   return (
