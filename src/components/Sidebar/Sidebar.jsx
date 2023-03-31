@@ -18,8 +18,8 @@ const Sidebar = (props) => {
                     <div>
                         <ul className='list-none'> 
                             {
-                            bookmarks.map(bookmark => 
-                            <li className='bg-white my-4 p-2 rounded-lg font-bold' key={bookmark.id}>
+                            bookmarks.map((bookmark, index) => 
+                            <li className='bg-white my-4 p-2 rounded-lg font-bold' key={index}>
                                 {bookmark.blog_title}
                                 
                             </li> )

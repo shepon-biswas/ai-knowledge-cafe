@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import BlogCard from "../BlogCard/BlogCard";
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -18,17 +20,19 @@ const Blogs = () => {
     const handleBookmark = (blog)=>{
       const newBookmark = [...bookmark, blog];
       setBookmark(newBookmark);
+
+      const exist = bookmark.find(singleBlog => singleBlog.blog_title === blog.blog_title);
+      if(exist){
+        toast("This Blog Already Bookmarked");
+      }
     }
 
     // HandleReadTime Function
     const handleReadTime = (blog) =>{
-      // console.log(blog);
       const readTimeMin = blog.read_time;
-      // console.log(readTimeMin);
       const newReadTime = readTime + readTimeMin;
-      // console.log(newReadTime);
       setReadTime(newReadTime);
-      
+         
     }
 
   return (
@@ -43,6 +47,7 @@ const Blogs = () => {
           </div>
           <div className="bg-slate-200 md:w-2/5 my-5 md:m-0 rounded-lg p-2">
             <Sidebar bookmark={bookmark} readTime={readTime}></Sidebar>
+            <ToastContainer />
           </div>
         </div>
       </div>
